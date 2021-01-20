@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Binding</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="vueComp">
+        <h1>{{title}}</h1>
+    
+        <a href="{{google}}">This wont work</a>
+        <br>
+        <br>
+        <a href="google">This also wont work </a>
+        <br>
+        <br>
+
+        <p>v-binding directive</p>
+        <a v-bind:href="google">Google</a> 
+        <a :href="google"></a> <!-- Short Hand -->
+        <br>
+        <p>v-html directive</p>
+        <p v-html="websiteTag"></p> 
+    </div>
+<!--
+    v:bind is a directive, we use to bind an attritube in vue 
+    and href gets binded to the google variable in data object of a vue instance
+    whenever google in data object of vue instance changes 
+    the href value also get changed as it's binded-->
+
+<!--v-html is a directive , we use to  display the html element -->
+
+    <script src="app.js"></script>
+</body>
+</html>
