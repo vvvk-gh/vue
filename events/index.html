@@ -15,14 +15,18 @@
         <button @dblclick="inc(10)">inc by 10</button>
         <button v-on:dblclick="dec(10)">dec by 10</button>
         <p>My age is {{age}}</p>
+        <div id="canvas" v-on:mousemove="updateXY">
+            <p>{{x}} {{y}}</p>
+        </div>
     </div>
+    
     <script src="app.js"></script>
 
     <!--
         To make events like onclik and dbclick and mousemove we can use
         vue directive called as v-on:<typeofevent>="<functionName>"  
             
-        We can also use shorthand for v-on directive which is "@"
+        we can also use shorthand for v-on directive which is "@"
         
 
     -->
