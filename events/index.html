@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Basics </title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="vueComp">
+        {{title}}
+        <button v-on:click="age++">inc age</button>
+        <button v-on:click="age--">dec age</button>
+        <button v-on:dblclick="age++">inc by 10</button>
+        <button v-on:dblclick="age--">dec by 10</button>
+        <p>My age is {{age}}</p>
+    </div>
+    <script src="app.js"></script>
+    <!--
+        To make events like onclik and dbclick and mousemove we can use
+        vue directive called as v-on:<typeofevent>="<functionName>"
+    -->
+</body>
+</html>
