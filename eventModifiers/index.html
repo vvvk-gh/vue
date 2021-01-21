@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="vueComp">
+        {{title}}
+        <br>
+        <br>
+        <button v-on:click.once="inc(1)">Once</button>
+        <button @click ="inc(1)">Many</button>
+        <br>
+        <br>
+        My age is {{age}}
+        <a :href="goolgeLink" @click.prevent="popup">Google</a> 
+    </div>
+    <!--Event modifiers are used to manage the behaviour of an event handler
+        Once = can make an eventListner listen to it for once and eventhough that event triggered the handler will ignorned
+        prevent = prevents the default behaviour of the anchor tag so it not directed just popup appeared
+        and we have few more like default , capture and self please refer documentation for those
+    -->
+    <script src="app.js"></script>
+</body>
+</html>
