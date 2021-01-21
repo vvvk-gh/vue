@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Kbd Events</title>
+    <script src="https://unpkg.com/vue"></script>
+</head> 
+<body>
+    <div id="vueComp">
+        Name : <input type="text" v-on:keyup.enter="print"></input> 
+        Age : <input type="text" @keyup.alt.enter="print"></input>
+    </div>
+    <script src="app.js"></script>
+    <!--
+        Keyup event triggers for every time a key is up in the keyboard
+        keyboard events have something called as key modifiers such enter alt escape
+        we can use one or chain mutiple buttons like alt+enter , ctrl+Alt+delete
+    -->
+</body>
+</html>
