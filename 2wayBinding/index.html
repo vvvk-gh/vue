@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 way Binding</title>
+    <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+
+    <div id="vuecomp">
+        {{title}}
+        <br>
+        <br>
+
+        Name : <input type="text" v-model="name">
+        Age : <input type="text" v-model="age">
+        <br>
+        <br>
+        
+        {{name}}
+
+        {{age}}
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
